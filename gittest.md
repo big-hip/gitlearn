@@ -79,16 +79,3 @@ git merge --no-ff develop
 
 git merge branch-name 时，Git 会检查当前分支（如 master）的历史中是否已经包含了 branch-name 的所有提交。如果是，则认为该分支已被合并，执行 快进合并（Fast-forward） 或直接跳过合并。
 
-当你执行 git revert 命令后，Git 会做以下事情：
-创建一个新的提交，这个提交的内容与你要撤销的提交正好相反
-自动打开默认的文本编辑器，让你编辑撤销提交的说明信息
-保存并关闭编辑器后，这个撤销操作就会被记录为一次新的提交
-
-几种模式的具体使用方法如下：
-
-#直接丢弃工作区和暂存区的修改
-git reset --hard HEAD
-#暂存区内容保留，工作区修改丢弃
-git reset --mixed HEAD
-#暂存区和工作区内容都保留
-git reset --soft HEAD
