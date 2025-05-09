@@ -18,7 +18,6 @@ remote add：添加远程仓库。
 origin：是这个远程仓库的代号，你可以用别的名字，但 origin 是默认常用的。
 https://...：是远程仓库的真实地址（例如 GitHub 上的仓库地址）。
 📌 只是建立“联系”，不会上传代码。
-
 git push -u origin main
 作用：
 把当前分支（通常是 main）的代码推送到远程仓库 origin 上。
@@ -76,3 +75,4 @@ git push origin --delete develop
 
 默认快进式合并，正常合并会产生一个新的节点
 log在正常合并里面会有一个分叉
+git merge --no-ff develop
