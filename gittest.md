@@ -68,3 +68,11 @@ git push origin :develop
 通过delete参数删除远程分支：git push 远程主机名 --delete 远程分支名 
 #删除远程develop分支,其中origin为远程主机名
 git push origin --delete develop
+
+分支合并需要用到git merge命令，具体的命令格式为：
+　　git merge 需要合并的分支
+在具体使用中，如当前处于master分支，需要将develop分支合并到master分支，则具体的使用方式如下：
+　　git merge develop
+
+默认快进式合并，正常合并会产生一个新的节点
+log在正常合并里面会有一个分叉
