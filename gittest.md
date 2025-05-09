@@ -76,3 +76,6 @@ git push origin --delete develop
 默认快进式合并，正常合并会产生一个新的节点
 log在正常合并里面会有一个分叉
 git merge --no-ff develop
+
+git merge branch-name 时，Git 会检查当前分支（如 master）的历史中是否已经包含了 branch-name 的所有提交。如果是，则认为该分支已被合并，执行 快进合并（Fast-forward） 或直接跳过合并。
+
